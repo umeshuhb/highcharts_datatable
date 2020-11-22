@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/dashboard",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,7 +23,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [              
+            "styles": [
               "src/styles.css",
               "node_modules/datatables.net-dt/css/jquery.dataTables.css"
             ],
