@@ -1,9 +1,12 @@
 {
-  "name": "dashboard",
+  "name": "highcharts_datatable",
+  "homepage": "http://umeshuhb.github.io/highcharts_datatable",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -55,6 +58,7 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "typescript": "~3.9.5",
+    "gh-pages": "^3.1.0"
   }
 }
