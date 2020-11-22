@@ -1,6 +1,6 @@
 # Highcharts_datatable
 
-#DEMO URL
+# DEMO URL
 
 https://umeshuhb.github.io/highcharts_datatable/
 
