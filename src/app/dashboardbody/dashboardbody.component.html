@@ -1,0 +1,72 @@
+<div class="container">
+
+   <!-- <highcharts-chart
+      [Highcharts] = "highcharts1" 
+      [options] = "chartOptions1" 
+      style = "width: 50%; height: 340px;margin: 0px auto; float:left;overflow: hidden;">
+   </highcharts-chart>
+
+   <highcharts-chart
+      [Highcharts] = "highcharts2" 
+      [options] = "chartOptions2" 
+      style = "width: 50%; height: 340px; margin: 0px auto; float: left; overflow: hidden;">
+   </highcharts-chart>
+
+
+
+   <highcharts-chart
+      [Highcharts] = "highcharts3" 
+      [options] = "chartOptions3" 
+      style = "width: 50%; height: 340px; margin: 0px auto; float:left;overflow: hidden;">
+   </highcharts-chart>
+   <div *ngIf="languageUser">
+      <highcharts-chart
+         [Highcharts] = "highcharts4" 
+         [options] = "chartOptions4" 
+         style = "width: 50%; height: 340px;margin: 0px auto; float: left;overflow: hidden;">
+      </highcharts-chart>
+   </div>
+   <div *ngIf="languageUser">
+      <ul class="language-user">
+         <li *ngFor="let user of languageUser">
+           <span class="badge">{{user.name}}</span> {{user.noOfFile}}
+         </li>
+       </ul>
+
+   </div> -->
+   <div id="container1" style = "width: 50%; height: 340px;margin: 0px auto; float:left;overflow: hidden;"></div>
+   <div id="container2" style = "width: 50%; height: 340px;margin: 0px auto; float:left;overflow: hidden;"></div>
+   <div [hidden]="languageUser">
+      <div id="container3" style = "width: 50%; height: 340px;margin: 0px auto; float:left;overflow: hidden;" ></div>
+   </div>
+
+   <div [hidden]="!languageUser" class="overflow-auto" style = "width: 50%; height: 340px;margin: 0px auto; float:left;overflow: hidden;" >
+      
+      <!-- <ul class="language-user list-group">
+         <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let user of languageUser">
+           <span class="badge">{{user.name}}</span>  
+           <span class="badge badge-primary badge-pill">{{user.noOfFile}}</span>
+         </li>
+       </ul> -->
+       <table class="table table-hover" cellspacing="0" >
+         <thead>
+           <tr>
+            <th>Language</th>
+             <th>Name</th>
+             <th>No of File</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr *ngFor="let user of languageUser">
+            <td>{{user.language}}</td>
+             <td>{{user.name}}</td>
+             <td>{{user.noOfFile}}</td>
+           </tr>
+         </tbody>
+       </table>
+   </div>
+   <div id="container4" style = "width: 50%; height: 340px;margin: 0px auto; float:left;overflow: hidden;"></div>  
+</div>
+
+
+
